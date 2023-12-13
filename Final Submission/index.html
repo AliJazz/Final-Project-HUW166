@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Plants</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">HOUSE PLANTS</h1>
+        <ul class="nav-links">
+            <li class="active"><a href="#"></a>Home</li>
+            <li><a href="gallery.html"> Gallery </a></li>
+              <li><a href="care.html"> Care </a></li>
+ 
+            <li><a href="about.html"> About </a></li>
+ 
+            <li class="ctn"><a  href="contact.html"></a>Contact</li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div>
+    </header>
+
+    <!-- == Events == -->
+    <section class="events">
+        <div class="title">
+            <h1>PLANT CARE</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="pant2.avif" alt="">
+                <h4>PERFECT TEMPERATURE </h4>
+                <p>Keep your plsnt'd home environment as stable a possible. Exptreme changes can stress plants out.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col">
+                <img src="plants5.jpeg" alt="">
+                <h4>WATERING THE PLANTS</h4>
+                <p>Water your plants perfectly with the tips. Click to learn more.</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="explore">
+      <div class="explore-content">
+        <h1>EXPLORE THE WORLD OF INDOOR PLANTS</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, repellendus sapiente ipsa reprehenderit suscipit iusto odit corrupti, quam velit eligendi laboriosam aspernatur tempore quaerat voluptate.</p>
+        <a href="#" class="ctn">Learn More</a>
+      </div>
+    </section>
+
+    <section class="tours">
+        <div class="row">
+            <div class="col content-col">
+                <h1>TRAILING & VINING PLANTS</h1>
+                <div class="line"></div>
+                <p>Find some of the most rewarding and fast-growing plants in our Trailing & Vining Plants Collection. Train your plant to vine down and create a beautiful cascade of foliage or train them upward with a moss pole!</p>
+                <a href="#" class="ctn">Learn More</a>
+            </div>
+            <div class="col image-col">
+                <div class="image-gallery">
+                    <img src="img.avif" alt="">
+                    <img src="img2.webp" alt="">
+                    <img src="img3.webp" alt="">
+                    <img src="img4.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>1010 LEXINGTON AVE, NY 10101, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright © 2020 Outdoor Adventure</p>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>

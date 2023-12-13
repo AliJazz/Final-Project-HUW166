@@ -1,0 +1,89 @@
+             <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Plants</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <h1 class="logo">HOUSE PLANTS</h1>
+        <ul class="nav-links">
+            <!-- <li class="active"><a href="about.htlm"></a>About</li> -->
+            <li><a href="index.html"> Home</a></li>
+            <li><a href="gallery.html"> Gallery </a></li>
+             <li><a href="care.html"> Care </a></li>
+          
+            <li class="ctn">
+            	<a href="contact.html"> Contact </a></li>
+        </ul>
+       <div class="mobile-nav">
+        <img src="./img/menu-btn.png" alt="" class="menu-btn">
+        <h1 class="close-btn">X</h1>
+       </div>
+    </nav>
+
+    <!-- <header> -->
+       <!--  <div class="header-content">
+            <h2>Explore The Colorful World</h2>
+            <div class="line"></div>
+            <h1>A WONDERFUL GIFT</h1>
+            <a href="#" class="ctn">Learn More</a>
+        </div> -->
+    <!-- </header> -->
+
+    <!-- == Events == -->
+    <section class="events">
+        <div class="title">
+            <h1>About us</h1>
+<p>Hey plant enthusiasts, welcome back to our green oasis! Today, we're diving deep into the art of plant care, exploring the secrets to keeping our leafy companions thriving and vibrant. Whether you're a seasoned plant parent or just starting your green journey, we've got tips and tricks to nurture your botanical buddies. From understanding each plant's unique needs to mastering the delicate balance of sunlight, water, and nutrients, we're here to demystify the world of plant care. Join me as we embark on a journey through the lush world of foliage, discovering the joy of fostering life and creating a haven of tranquility in our homes. So grab your watering can and let's cultivate a deeper connection with nature—one leaf at a time. Don't forget to like, subscribe, and share your own plant care wisdom in the comments below. Happy growing!"</p>
+
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <!-- <img src="pant2.avif" alt=""> -->
+                <!-- <h4>PERFECT TEMPERATURE </h4> -->
+                <!-- <p>Keep your plsnt'd home environment as stable a possible. Exptreme changes can stress plants out.</p>
+                <a href="#" class="ctn">Learn More</a> -->
+            </div>
+            <!-- <div class="col"> -->
+              <!--   <img src="plants5.jpeg" alt="">
+                <h4>WATERING THE PLANTS</h4>
+                <p>Water your plants perfectly with the tips. Click to learn more.</p>
+                <a href="#" class="ctn">Learn More</a> -->
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <p>1010 LEXINGTON AVE, NY 10101, New York, USA | Phone: 800-123-456 | Email: contact@example.com</p>
+        <p>Copyright © 2020 Outdoor Adventure</p>
+    </section>
+
+    <script>
+        const mobileNav = document.querySelector('.mobile-nav')
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+        const closeBtn = document.querySelector('.close-btn')
+
+        mobileNav.addEventListener('click',(e)=>{
+            navlinks.classList.toggle('mobile-menu')
+            if(e.target === menuBtn){
+                menuBtn.replaceWith(closeBtn)
+                closeBtn.style.display = 'block'
+            }
+            if(e.target === closeBtn){
+                closeBtn.replaceWith(menuBtn)
+            }
+        })
+    </script>
+</body>
+
+</body>
+</html>
